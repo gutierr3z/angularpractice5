@@ -20,6 +20,8 @@ export class MainComponent implements OnInit {
   theClasses = {};
   theStyles = {};
 
+  age:number = 200;
+
   constructor( public dataService:DataService ) { 
 
     this.users = this.dataService.users;

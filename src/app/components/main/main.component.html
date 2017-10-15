@@ -20,3 +20,6 @@
 <h4 [ngClass] = "theClasses">another one</h4>
 
 <h1 id="blahID" [style.font-size] = "isFat ? '10px' : '50px'" [ngStyle] = "theStyles" (click) = "clickOne( $event )">hello books</h1>
+
+<input type="text" [(ngModel)] = "age" name="age">
+<h5>{{ age }}</h5>
