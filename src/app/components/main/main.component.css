@@ -1,0 +1,12 @@
+
+.special {
+    color: red;
+}
+
+.boring {
+    text-transform: uppercase;
+}
+
+.fat {
+    font-weight: bold;
+}
