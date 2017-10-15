@@ -1,3 +1,9 @@
 <p>
-  footer works! {{ flag ? spot1 : 'denied' }}
+  footer works! {{ spot1 }}
 </p>
+<div [ngSwitch] = 'spot1'>
+  <div *ngSwitchCase = "'red'">hello red</div>
+  <div *ngSwitchCase = "'blue'">hello blue</div>
+  <div *ngSwitchCase = "'yellow'">hello yellow</div>
+  <div *ngSwitchDefalut>hello defalut</div>
+</div>

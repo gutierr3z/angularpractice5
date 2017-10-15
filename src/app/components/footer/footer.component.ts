@@ -9,7 +9,7 @@ import { DataService } from '../../services/data.service';
 })
 export class FooterComponent implements OnInit {
 
-  flag:boolean = true;
+  flag:boolean = false;
   spot1:string = '';
 
   constructor( public dataService:DataService ) { 

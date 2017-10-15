@@ -11,6 +11,7 @@ export class MainComponent implements OnInit {
 
   users:string[] = [];
   spot1:string = '';
+  flag:boolean = false;
 
   constructor( public dataService:DataService ) { 
 

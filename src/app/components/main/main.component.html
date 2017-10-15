@@ -7,3 +7,10 @@
   </li>
 </ul>
 
+{{ spot1 }}
+<div [title] = "spot1">hello {{ spot1 }}</div>
+<div bind-title = "spot1">bindz</div>
+<div [textContent] = "spot1">xxXX</div>
+
+<div [hidden] = 'flag'>hellounchanged</div>
+<input type="text" [disabled] = 'flag' value="hello there">
