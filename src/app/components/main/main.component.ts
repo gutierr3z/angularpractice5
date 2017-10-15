@@ -34,8 +34,6 @@ export class MainComponent implements OnInit {
   }
 
 
-  
-
   setTheClasses() {
     this.theClasses = {
       special: this.isSpecial,
