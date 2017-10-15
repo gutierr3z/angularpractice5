@@ -15,9 +15,10 @@ export class MainComponent implements OnInit {
 
   isSpecial:boolean = true;
   isBoring:boolean = true;
-  isFat:boolean = true;
+  isFat:boolean = false;
 
   theClasses = {};
+  theStyles = {};
 
   constructor( public dataService:DataService ) { 
 
@@ -27,6 +28,7 @@ export class MainComponent implements OnInit {
     this.dataService.spot1 = 'blue';
 
     this.setTheClasses();
+    this.setTheStyles();
   }
 
 
@@ -38,9 +40,20 @@ export class MainComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-    
+  setTheStyles() {
+    this.theStyles = {
+      'font-style': this.isSpecial ? 'italics' : 'normal'
+    }
   }
+
+  clickOne( e ) {
+    console.log( 'one: ', e.target.id );
+  }
+
+  ngOnInit() {
+
+  }
+
 
 
 }
